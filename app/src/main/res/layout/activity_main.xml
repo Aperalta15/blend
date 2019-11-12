@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/user"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:cursorVisible="true"
+        android:ems="10"
+        android:hint="@string/user"
+        android:inputType="date|textEmailAddress"
+        android:textColorHighlight="#2196F3"
+        android:textColorLink="#00BCD4"
+        android:textCursorDrawable="@color/colorAccent"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleLogin" />
+
+    <EditText
+        android:id="@+id/userPassword"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:cursorVisible="true"
+        android:ems="10"
+        android:hint="@string/pass"
+        android:inputType="textPassword"
+        android:minLines="8"
+        android:textColorHighlight="#2196F3"
+        android:textColorLink="#00BCD4"
+        android:textCursorDrawable="@color/colorAccent"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user" />
+
+    <TextView
+        android:id="@+id/titleLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/baloo_bhai"
+        android:foregroundTintMode="add"
+        android:text="@string/inicioSesion"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/login"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="310dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="#00BCD4"
+        android:fontFamily="monospace"
+        android:text="@string/inicioSesion"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userPassword" />
+
+    <TextView
+        android:id="@+id/lostPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:linksClickable="true"
+        android:text="@string/lostPass"
+        android:textColor="#00BCD4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login"
+        app:layout_constraintVertical_bias="0.012" />
+</androidx.constraintlayout.widget.ConstraintLayout>

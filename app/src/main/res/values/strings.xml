@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Blend</string>
+    <string name="inicioSesion">Inicio Sesión</string>
+    <string name="user">Usuario</string>
+    <string name="pass">••••••••</string>
+    <string name="lostPass"><a href="fleteo.co">Olvidaste tu contraseña?</a></string>
+</resources>
